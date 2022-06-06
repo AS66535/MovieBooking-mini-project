@@ -1,0 +1,17 @@
+.container{
+    opacity:0.9;
+    
+}
+
+label{
+    color: white;
+    font-size:x-large;
+    margin-right: 30rem;
+}
+.btn{
+  border: 2px solid black;
+  border-radius: 10rem;
+  font-size: larger;
+  background-color: black;
+  color: white;
+}

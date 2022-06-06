@@ -1,0 +1,89 @@
+
+
+<div>
+	<table class="" >
+		<thead class="">
+			<tr>
+				<th>Theatre Name</th>
+				<th>Screen Name</th>
+				<th>Show Timing</th>
+			</tr>
+    </thead>
+    <tbody>
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>BigCenama</td>
+          <td>SCREEN2</td>
+          <td>10:45 , 12:15 </td>
+        </tr>
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>ImaxPrasad</td>
+          <td>SCREEN2 , SCREEN3</td>
+          <td>10:45, 13:00, 16:15 </td>
+        </tr>
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>Cinepolis</td>
+          <td>SCREEN1, SCREEN3</td>
+          <td> 15:45,13:00, 16:15, 18:00 ,20:15 </td>
+        </tr>
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>PVR</td>
+          <td>SCREEN1,SCREEN2,SCREEN3</td>
+          <td>10:45, 13:00, 16:15, 18:00 ,20:15 </td>
+        </tr>
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>InBOX</td>
+          <td>SCREEN2</td>
+          <td>10:45, 15:45,13:00, 16:15, 18:00 ,20:15 </td>
+        </tr>
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>Mulit-Plex</td>
+          <td>SCREEN3</td>
+          <td>10:45,12:15, 13:30, 15:45,13:00, 16:15, 18:00 ,20:15 </td>
+        </tr>
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>Santosh 70mm</td>
+          <td>SCREEN1</td>
+          <td>10:45, 12:15, 13:30,20:15</td>
+        </tr>
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>PriyaTheatre</td>
+          <td>SCREEN2</td>
+          <td>10:45 ,12:15, 13:30, 15:45,13:00, 16:15, 18:00 ,20:15</td>
+        </tr>
+
+    </tbody>
+    </table>
+</div>
+<!-- 
+</table>
+  <ng-container *ngFor="let mydate of showDates" >
+    <div class="btn-group">
+      <button (click)="GetShowList(mydate)">{{mydate | date }}</button>
+    </div>
+  </ng-container>
+
+
+ <div *ngIf="isDateAvailable">
+	<table class="" >
+		<thead class="">
+			<tr>
+				<th>Theatre Name</th>
+				<th>Screen Name</th>
+				<th>Show Timing</th>
+			</tr>
+    </thead>
+
+		<tbody>
+      <ng-container *ngFor="let  of ShowDetails">
+        <tr (click)="selectshow()" routerLink="/seat">
+          <td>{{.theatreName}}</td>
+          <td>{{.screenName}}</td>
+          <td>{{.startTime  }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+
+	</table>
+</div> 
+
+ -->

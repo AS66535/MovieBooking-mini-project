@@ -1,0 +1,20 @@
+
+li{
+    color: white;
+    text-transform: uppercase;
+}
+ul a:hover{
+    border-radius: 5rem;
+   background-color:#c8d2ec;
+      transition: 1s;
+      
+}
+.site-title{
+    background-color: #f0f5f7; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    color: rgb(41, 48, 58);
+}

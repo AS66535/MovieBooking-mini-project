@@ -1,0 +1,128 @@
+<div class="movie-container">
+  <div class="container">
+    <!-- info -->
+    <ul class="showcase text-white">
+      <li>
+        <div class="seat red" (click)="isCount()"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected green"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied blue"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+
+    <!-- Screen -->
+    
+  </div>
+
+
+
+  <div class="container">
+    <div class="cinema-seats row" *ngFor="let seats of myarray; let i = index">
+
+      <div *ngFor="let seat of seats; let j = index" class="d-inline col text-white">
+        <div class="seat" *ngIf="seat.isBooked" [ngClass]="'blue'"> {{num}}</div>
+        <div class="seat" *ngIf="!seat.isBooked" (click)="seatClick(i*10+j+1,seat)"
+          [ngClass]="{'green':isSelectedArray[i*10+j+1] , 'red':!isSelectedArray[i*10+j+1]}"> {{seat.seatNumber}} </div>
+      </div>
+      <br>
+    </div>
+     <br><br>
+     <div class="size">
+      <div class="containr">
+       <div class="screennn"> </div>
+
+        <div class="row">
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class=" seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+    </div>
+    <div class="row">
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+    </div>
+    <div class="row">
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+    </div>
+    <div class="row">
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+    </div>
+    <div class="row">
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+    </div>
+    <div class="row">
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+        <div class="seatemty occupiedd blue"></div>
+        <div class="seatemty" (click)="isCount()" ></div>
+    </div>
+</div>
+</div>
+    <br><br>
+
+    <h5  class="text-white">You have selected <b> <i> {{num}} seats </i></b> for the total price of
+      <b><i> Rs. {{num * 150}} </i></b></h5>
+
+   
+    <div class="wrap">
+      <button (click)="isBooked()" type="button" class="button">Book Your Ticket</button>
+    </div>
+
+
+  </div>
+
+</div>
